@@ -56,7 +56,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                     `}
             >
 
-                projects
+                Projects
             </a>
 
             <a href="#contact"
