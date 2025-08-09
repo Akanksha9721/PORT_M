@@ -1,8 +1,6 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Projects = () => {
-
-
     return (
         <section
             id="projects"
