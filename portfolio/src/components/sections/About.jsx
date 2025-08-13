@@ -84,20 +84,44 @@ export const About = () => {
                                 (2024-2027)
                             </li>
                             <li>
-                                Relevat Coursework:MERN FULL STACK,Data Structure and Algorithm,JAVA
+                                <strong>Relevant Coursework:</strong> Data Structure and Algorithm, JAVA, Python
                             </li>
                             <li>
                                 <strong> Diploma in Computer Science</strong> -Board of Technical Education Uttar Pradesh
                                 (2021-2024)
                             </li>
                             <li>
-                                Relevat Coursework:Web Development and Design,Database Management System,Programming in C
+                                <strong>Relevant Coursework:</strong> Web Development and Design
                             </li>
                         </ul>
 
                     </div>
                     <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
                         <h3 className="text-xl  font-bold mb-4"> Work Experience</h3>
+                        <div className="space-y-4 text-gray-300">
+                            <div>
+                                <h4 className="font-semibold">
+                                    {" "}
+                                    MERN STACK Intern at Digipodium private limited(Jan 2025-May2025){" "}
+                                    </h4>
+                                <p>
+                                    Developed and maintained web applications using the MERN stack, including React, Node.js,
+                                    Express, and MongoDB.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold">
+                                    {" "}
+                                    MERN STACK Trainee at Digipodium private limited(sept 2024 -Dec 2024){" "}
+                                    </h4>
+                                <p>
+                                    Assisted in the development of web applications using the MERN stack, focusing on front-end
+                                    development with React and back-end integration with Node.js and Express.
+
+                                </p>
+                            </div>
+
+                        </div>
                         
 
                     </div>
