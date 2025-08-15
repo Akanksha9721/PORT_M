@@ -19,8 +19,9 @@ function App() {
     <>
       <>{!isLoaded && <LoadingScreen onComplate={() => setIsLoaded(true)} />}</>{" "}
       <div
-        className={`min-h-screen transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"
-          }bg-black text-gray-100`}
+        className={`min-h-screen transition-opacity duration-700 ${
+          isLoaded ? "opacity-100" : "opacity-0"
+        } bg-black text-gray-100 overflow-x-hidden w-full`}
 
 
       >
@@ -28,8 +29,9 @@ function App() {
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
         <About />
+         <Projects/>
         <Contact/>
-        <Projects/>
+       
         
     
       </div>

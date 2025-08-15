@@ -1,0 +1,109 @@
+.loading-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    background: radial-gradient(circle at center, #111 0%, #000 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.loading-logo {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    margin-bottom: clamp(1.5rem, 4vw, 3rem);
+    background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.typing-text {
+    font-size: clamp(1rem, 4vw, 1.875rem);
+    text-align: center;
+    margin-bottom: clamp(1.5rem, 4vw, 3rem);
+    font-family: monospace;
+    max-width: 90vw;
+}
+
+.typing-animation {
+    border-right: 2px solid transparent;
+    animation: blink 0.7s infinite;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.loading-container {
+    width: clamp(280px, 80vw, 400px);
+    margin: 0 auto;
+}
+
+.loading-progress {
+    position: relative;
+    overflow: hidden;
+    height: 3px;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.loading-progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    animation: loading 1.5s infinite ease-in-out;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent }
+    50% { border-color: #3b82f6 }
+}
+
+@keyframes loading {
+    0% {
+        left: -40%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.fade-up {
+    animation: fadeUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+}
