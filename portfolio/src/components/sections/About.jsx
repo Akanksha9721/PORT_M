@@ -49,7 +49,7 @@ export const About = () => {
                                         </span>
                                     ))}
                                 </div>
-                            </div>
+                            </div>                                                                                                                                    
                             <div className="rounded-xl p-4 sm:p-6 hover:-translate-y-1 transition-all backdrop-blur-sm bg-white/5">
                                 <h3 className="text-xl font-bold mb-4 text-blue-400">Backend</h3>
                                 <div className="flex flex-wrap gap-2">
